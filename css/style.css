@@ -295,6 +295,7 @@ button {
     flex: 3;
     margin-left: 320px;
 }
+
 /* banner section start */
 .banner_section {
     width: 100%;
@@ -305,7 +306,7 @@ button {
 .banner_img {
     width: 45%;
     margin: 0 auto;
-    background-image: url(../imsges/banner-img.png);
+    background-image: url(../images/banner-img.png);
     height: auto;
     background-repeat: no-repeat;
     background-size: 100%;
