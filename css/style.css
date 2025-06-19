@@ -297,101 +297,74 @@ button {
 }
 /* banner section start */
 
+/* === Banner Section === */
 .banner_section {
-    width: 100%;
-    float: left;
-    position: relative;
-    padding-bottom: 90px;
-}
-.banner_img {
-    width: 45%;
-    margin: 0 auto;
-    background-image: url(../imsges/banner-img.png);
-    height: auto;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    z-index: 1;
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full screen height */
+  overflow: hidden;
 }
 
-.banner_section {
-    position: relative;
-    width: 100%;
-    float: left;
-    padding-bottom: 90px;
-    overflow: hidden;
-}
-
-/* Background image with increased size and 50% opacity */
+/* Background Image with opacity */
 .banner_section::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 120%; /* increase image size beyond container */
-    height: 120%; /* slightly larger for zoom effect */
-    background-image: url(../images/banner-img.png); /* make sure the path is correct */
-    background-size: cover;
-    background-position: center;
-    opacity: 0.5; /* 50% opacity */
-    z-index: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120%;
+  height: 120%;
+  background-image: url(../images/banner-img.png); /* ✅ Make sure this path is correct */
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;
+  z-index: 0;
 }
 
-/* Keep content above the background */
-.banner_section .container,
-.banner_section .carousel-inner {
-    position: relative;
-    z-index: 1;
+/* Foreground Content */
+.banner_section .container {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-
-.banner_taital {
-    width: 100%;
-    font-size: 150px;
-    color: #1c1b1b;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-align: center;
-    padding-top: 80px;
+/* Banner Title */
+.banner_title {
+  font-size: 80px;
+  color: #1c1b1b;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0;
 }
 
-.contact_bt {
-    width: 170px;
-    margin: 0 auto;
-    padding: 190px 0px 0px 0px;
+/* Call to Action Button */
+.contact_btn {
+  margin-top: 40px;
 }
 
-.contact_bt a {
-    width: 100%;
-    float: left;
-    font-size: 16px;
-    color: #ffffff;
-    background-color: #fa7f63;
-    text-align: center;
-    border-radius: 40px;
-    padding: 10px 0px;
-    text-transform: uppercase;
-}
-.contact_bt a:hover{
-    background-color: #252525;
-    color: #ffffff;
+.contact_btn a {
+  display: inline-block;
+  padding: 12px 30px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #fa7f63;
+  border-radius: 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
-.carousel-indicators li {
-    width: 16px;
-    height: 16px;
-    background-color: #252525;
-    border-radius: 100%;
-    top: -80px;
+.contact_btn a:hover {
+  background-color: #252525;
 }
 
-.carousel-indicators .active {
-    background-color: #fa7f63;
-}
-/* banner section end */
+/* === End Banner Section === */
+
 
 /* service section start */
 
