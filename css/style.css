@@ -209,7 +209,6 @@ button {
 
 
 
-/* header section start */
 
 .header_section {
     width: 100%;
@@ -221,7 +220,7 @@ button {
 }
 
 .navbar-brand {
-    width: 8%;
+    width: 21%;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -231,7 +230,6 @@ button {
     text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
 }
-
 
 .navbar-light .navbar-nav .nav-link {
     color: #4f4f4f;
@@ -293,9 +291,7 @@ button {
 }
 .mr-auto, .mx-auto {
     flex: 3;
-    margin-left: 320px;
 }
-
 /* banner section start */
 .banner_section {
     width: 100%;
